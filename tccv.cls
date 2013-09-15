@@ -73,7 +73,9 @@
 	\vskip-\lastskip%
 	{\usekomafont{part} #1} \medskip\\
 	{\fontfamily{pzc}\selectfont\Huge Curriculum vit\ae}
-	\bigskip
+	\bigskip\\
+	\hrulefill\hspace{0.2cm} \floweroneleft\floweroneright \hspace{0.2cm} \hrulefill
+
     \end{center}]}
 
 % Overrides the \section command to capitalize every
@@ -117,13 +119,9 @@
     \ifstrempty{#1}{}{\smallskip\\ \Lightning & \href{http://#1}{#1}}
     \end{tabularx}}}
 
-% Every \item can be followed by one or more paragraphs
-% of description:
-%
+
 % |[
-% \item{date range}{company}{role}{technologies}
-%
-% Description of what achieved during this application.
+% \item{date range}{company}{role}{technologies}{description}
 % ]|
 \newenvironment{project_list}{%
     \newcommand*\inskip{}
@@ -131,11 +129,34 @@
 		\inskip%
 		{\raggedleft ##1\\[2pt]}
     	\ifstrempty{##2}{}{##2\\[2pt]}
-		{\Large\it ##3}
-		\\[2pt]
-		##4
-		\medskip\\
-    	\ifstrempty{##5}{}{Technologies: {\it ##5}}
+		{\Large ##3 \medskip}
+		\par
+		\begingroup
+			\leftskip1em
+			\rightskip\leftskip
+			##4
+			\medskip\\
+	    	\ifstrempty{##5}{}{Technologies:{\it ##5}}
+		\par
+		\endgroup
+
+		\medskip
+		\renewcommand\inskip{\bigskip}
+    }
+}
+{\bigskip}
+
+% |[
+% \item{date range}{conference}{subject}{role}
+% ]|
+\newenvironment{teaching}{%
+    \newcommand*\inskip{}
+    \setlength{\parindent}{7pt}
+    \renewcommand\item[4]{%
+		\inskip%
+		\noindent ##4\dotfill ##1\\[4pt]
+    	\ifstrempty{##2}{}{\indent ##2\\[3pt]}
+		\indent {\Large ##3}
 		\medskip
 		\renewcommand\inskip{\bigskip}
     }
