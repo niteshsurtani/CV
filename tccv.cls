@@ -30,7 +30,7 @@
 \LoadClass[10pt]{scrartcl}
 
 \setcounter{secnumdepth}{-1}
-\RequirePackage[hmargin=1.25cm,vmargin=2.2cm,twocolumn,columnsep=1.25cm]{geometry}
+\RequirePackage[hmargin=1.25cm,vmargin=2.3cm,twocolumn,columnsep=1.25cm]{geometry}
 \RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor}
 
 \newcommand{\sectionline}{%
@@ -46,6 +46,12 @@
     \end{tikzpicture}}}}}%
     \end{center}
   }
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
 
 % Capitalize words of at least a minimum length (default to 3 chars).
 % The text is capitalized before being expanded.
@@ -72,7 +78,7 @@
 \pagestyle{empty}
 \setlength\parindent{0pt}
 \color[HTML]{303030} % Default foreground color
-\definecolor{link}{HTML}{506060} % Hyperlinks
+\definecolor{link}{HTML}{5080AA} % Hyperlinks
 \hypersetup{colorlinks,breaklinks,urlcolor=link,linkcolor=link}
 \setkomafont{disposition}{\color[HTML]{801010}}
 \setkomafont{section}{\scshape\Large\mdseries}
@@ -133,7 +139,7 @@
     \needspace{0.5\textheight}%
     \newdimen\boxwidth%
     \boxwidth=\dimexpr\linewidth-2\fboxsep\relax%
-    \colorbox[HTML]{F5DD9D}{%
+    \colorbox[HTML]{BEDBE3}{%
     \begin{tabularx}{\boxwidth}{c|X}
     \Writinghand & {#2}\smallskip\\
     \Telefon     & {#3}\smallskip\\
@@ -149,8 +155,8 @@
     \newcommand*\inskip{}
     \renewcommand\item[5]{%
 		\inskip%
-		{\raggedleft ##1\\[2pt]}
-    	\ifstrempty{##2}{}{##2\\[2pt]}
+		{\raggedleft ##1\\[3pt]}
+    	\ifstrempty{##2}{}{##2\\[3pt]}
 		{\Large ##3 \medskip}
 		\par
 		\begingroup
