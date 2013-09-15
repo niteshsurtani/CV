@@ -72,7 +72,7 @@
     \begin{center}
 	\vskip-\lastskip%
 	{\usekomafont{part} #1} \medskip\\
-	{\fontfamily{pzc}\selectfont\Huge Curriculum vitæ}
+	{\fontfamily{pzc}\selectfont\Huge Curriculum vit\ae}
 	\bigskip
     \end{center}]}
 
@@ -121,17 +121,21 @@
 % of description:
 %
 % |[
-% \item{date range}{company}{role}
+% \item{date range}{company}{role}{technologies}
 %
 % Description of what achieved during this application.
 % ]|
-\newenvironment{eventlist}{%
+\newenvironment{project_list}{%
     \newcommand*\inskip{}
-    \renewcommand\item[3]{%
+    \renewcommand\item[5]{%
 		\inskip%
-		{\raggedleft\sc ##1\\[1pt]}
-		{##2}\\[2pt]
+		{\raggedleft ##1\\[2pt]}
+    	\ifstrempty{##2}{}{##2\\[2pt]}
 		{\Large\it ##3}
+		\\[2pt]
+		##4
+		\medskip\\
+    	\ifstrempty{##5}{}{Technologies: {\it ##5}}
 		\medskip
 		\renewcommand\inskip{\bigskip}
     }
@@ -189,5 +193,14 @@
     \tabularx{\linewidth}{rX}
 }
 {\endtabularx}
+
+
+
+
+
+
+
+
+
 %%
 %% End of file `tccv.cls'.
