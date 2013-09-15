@@ -33,6 +33,20 @@
 \RequirePackage[hmargin=1.25cm,vmargin=1.25cm,twocolumn,columnsep=1.25cm]{geometry}
 \RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor}
 
+\newcommand{\sectionline}{%
+  \noindent
+  \begin{center}
+  {\color{darkgray}
+    \resizebox{0.8\linewidth}{1ex}
+    {{%
+    {\begin{tikzpicture}
+    \node  (C) at (0,0) {};
+    \node (D) at (6,0) {};
+    \path (C) to [ornament=88] (D);
+    \end{tikzpicture}}}}}%
+    \end{center}
+  }
+
 % Capitalize words of at least a minimum length (default to 3 chars).
 % The text is capitalized before being expanded.
 %
@@ -70,13 +84,21 @@
 \renewcommand\part[1]{%
     \twocolumn[%
     \begin{center}
-	\vskip-\lastskip%
-	{\usekomafont{part} #1} \medskip\\
-	{\fontfamily{pzc}\selectfont\Huge Curriculum vit\ae}
+		\vskip-\lastskip%
+		{\usekomafont{part} #1} \medskip\\
+		{\fontfamily{pzc}\selectfont\Huge Curriculum vit\ae}
+		\bigskip\\
+	\end{center}
+	
+	\hfill \href{http://bit.ly/pooria-azimi-cv}{http://bit.ly/pooria-azimi-cv}
+	\vspace{-1.5em}	
+	\center{
+		\hrulefill\hspace{0.2cm}
+		\floweroneleft\floweroneright
+		\hspace{0.2cm} \hrulefill}
+	\vspace{1em}	
 	\bigskip\\
-	\hrulefill\hspace{0.2cm} \floweroneleft\floweroneright \hspace{0.2cm} \hrulefill
-
-    \end{center}]}
+    ]}
 
 % Overrides the \section command to capitalize every
 % word for cosmetic purposes and draws a rule under it.
