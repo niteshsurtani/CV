@@ -14,8 +14,13 @@
 \usepackage{lipsum,tikz}
 \usepackage{fourier-orns}
 \usepackage{setspace}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{array}
 
-
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 
 
@@ -25,14 +30,6 @@
 \begin{document}
 
 \part{Pooria Azimi}
-
-\personal
-    {365, E2, Ekbatan, Tehran, Iran}
-    {+98 (935) 4312645}
-    {pooriaazimi@gmail.com}
-
-
-
 
 
 
@@ -82,6 +79,7 @@ Ranked 590 in 2009 National Matriculation Exam ({\bf top \%0.2})
 
 \section{Communication skills}
 
+
 \begin{factlist}
 
 \item{English}{Fluent}
@@ -95,11 +93,47 @@ Ranked 590 in 2009 National Matriculation Exam ({\bf top \%0.2})
 
 \sectionline
 
-asd
+
+{\renewcommand{\arraystretch}{1.6}
+\begin{table}[ph]
+  \centering
+	\begin{tabular}{C{3.5cm}|C{4cm}}
+ 	   {\sc TOEFL iBT} & {\sc GRE General (\uline{expected}*)}\\[5px]
+	   \hline
+ 	   	\begin{tabular}{R{1.8cm}|L{0.8cm}}
+			Reading & 30 \\
+			Listening & 29\\
+			Speaking & 22**\\
+			Writing & 28\\
+			\hline
+			{\bf Total} & {\bf 109}
+		\end{tabular}
+		&
+ 	   	\begin{tabular}{R{2.3cm}|L{0.8cm}} 
+			Verbal Reasoning & 160+\\
+			Quantitative Reasoning & 170\\
+			Analythical Writing & 4.5+
+		\end{tabular}
+	\end{tabular}
+\end{table}
+{\renewcommand{\arraystretch}{1}
+
+
+* Only the paper-based GRE test is administrated in Iran (with the results being made available on, or after, {\bf December 9\textsuperscript{th}}), but based on a few prep tests, I \uline{expect} to approximately score as stated above.
+\\
+** I'm taking another iBT test (with the results being made on {\bf November 12\textsuperscript{th}}) to improve my score in the Speaking section.
 
 
 
 
+
+
+
+
+\personal
+    {365, E2, Ekbatan, Tehran, Iran}
+    {+98 (935) 4312645}
+    {pooriaazimi@gmail.com}
 
 
 
@@ -394,6 +428,20 @@ asd
 
 
 
+\vspace{-30pt}
+
+
+
+
+\section{Awards}
+
+\begin{factlist}
+\item{2\textsuperscript{nd} place}{\href{http://www.data-mining-cup.de/en/review/dmc-2012/}{13\textsuperscript{th} International Data Mining Cup, Berlin, Germany, 2012}}
+\end{factlist}
+
+
+
+
 
 
 
@@ -403,7 +451,7 @@ I love online education, and in addition to my normal classes, I have watched th
 
 \begin{itemize}
 
-\item MIT's legendary \href{http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/}{Structure and Interpretation of Computer Programs} {\it(1986 - by \href{https://en.wikipedia.org/wiki/Hal_Abelson}{Harold Abelson} and \href{https://en.wikipedia.org/wiki/Gerald_Jay_Sussman}{Gerald Jay Sussman})}
+\item MIT's legendary \href{http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/}{Structure and Interpretation of Computer Programs} {\it(1986 -- by \href{https://en.wikipedia.org/wiki/Hal_Abelson}{Harold Abelson} and \href{https://en.wikipedia.org/wiki/Gerald_Jay_Sussman}{Gerald Jay Sussman})}
 
 \item UC Berkley's \href{http://www.cs.berkeley.edu/~kubitron/courses/cs162-F08/}{Operating Systems and Systems Programming} {\it(2008)}
 
@@ -417,22 +465,12 @@ I'm also taking the following Coursera courses this semester:
 
 \begin{itemize}
 
-\item EPFL's \href{https://www.coursera.org/course/progfun}{Functional Programming Principles in Scala} {\it(2013 - by \href{https://en.wikipedia.org/wiki/Martin_Odersky}{Martin Odersky})}
+\item EPFL's \href{https://www.coursera.org/course/progfun}{Functional Programming Principles in Scala} {\it(2013 -- by \href{https://en.wikipedia.org/wiki/Martin_Odersky}{Martin Odersky})}
 
-\item EPFL/Typesafe Inc.'s \href{https://www.coursera.org/course/reactive}{Principles of Reactive Programming} {\it(2013 - by \href{https://en.wikipedia.org/wiki/Martin_Odersky}{Martin Odersky})}
+\item EPFL/Typesafe Inc.'s \href{https://www.coursera.org/course/reactive}{Principles of Reactive Programming} {\it(2013 -- by \href{https://en.wikipedia.org/wiki/Martin_Odersky}{Martin Odersky})}
 
 \end{itemize}
 
-
-
-
-
-
-\section{Awards}
-
-\begin{factlist}
-\item{2\textsuperscript{nd} place}{\href{http://www.data-mining-cup.de/en/review/dmc-2012/}{13\textsuperscript{th} International Data Mining Cup, Berlin, Germany, 2012}}
-\end{factlist}
 
 
 

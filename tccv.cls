@@ -30,7 +30,7 @@
 \LoadClass[10pt]{scrartcl}
 
 \setcounter{secnumdepth}{-1}
-\RequirePackage[hmargin=1.25cm,vmargin=1.25cm,twocolumn,columnsep=1.25cm]{geometry}
+\RequirePackage[hmargin=1.25cm,vmargin=2.2cm,twocolumn,columnsep=1.25cm]{geometry}
 \RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor}
 
 \newcommand{\sectionline}{%
