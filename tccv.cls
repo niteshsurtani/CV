@@ -30,8 +30,8 @@
 \LoadClass[10pt]{scrartcl}
 
 \setcounter{secnumdepth}{-1}
-\RequirePackage[hmargin=1.25cm,vmargin=2.3cm,twocolumn,columnsep=1.25cm]{geometry}
-\RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor}
+\RequirePackage[hmargin=1.25cm,vmargin=2.3cm,twocolumn,columnsep=1.2cm]{geometry}
+\RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,lipsum,tikz,fourier-orns}
 
 \newcommand{\sectionline}{%
   \noindent
@@ -157,15 +157,16 @@
 		\inskip%
 		{\raggedleft ##1\\[3pt]}
     	\ifstrempty{##2}{}{##2\\[3pt]}
-		{\Large ##3 \medskip}
-		\par
+		{\Large ##3}
 		\begingroup
+			\par
+			\vspace{5px}
 			\leftskip1em
 			\rightskip\leftskip
 			##4
-			\medskip\\
-	    	\ifstrempty{##5}{}{Technologies:{\it ##5}}
-		\par
+			
+	    	\ifstrempty{##5}{\vspace{10px}}{\vspace{8px} Technologies:{\it ##5}}
+			\par
 		\endgroup
 
 		\medskip
