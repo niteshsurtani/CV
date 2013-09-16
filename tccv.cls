@@ -92,7 +92,7 @@
     \begin{center}
 		\vskip-\lastskip%
 		{\usekomafont{part} #1} \medskip\\
-		{\fontfamily{pzc}\selectfont\Huge Curriculum vit\ae}
+		{\Large Curriculum vit\ae}
 		\bigskip\\
 	\end{center}
 	
@@ -155,20 +155,19 @@
     \newcommand*\inskip{}
     \renewcommand\item[5]{%
 		\inskip%
-		{\raggedleft ##1\\[3pt]}
-    	\ifstrempty{##2}{}{##2\\[3pt]}
+		{\raggedleft ##1\\*[3pt]}
+    	\ifstrempty{##2}{}{##2\\*[3pt]}
 		{\Large ##3}
 		\begingroup
 			\par
-			\vspace{5px}
+			\vspace{5pt}
 			\leftskip1em
 			\rightskip\leftskip
 			##4
-			
-	    	\ifstrempty{##5}{\vspace{10px}}{\vspace{8px} Technologies:{\it ##5}}
+			\\*[5pt]
+		    \ifstrempty{##5}{}{Technologies:{\it ##5}}
 			\par
 		\endgroup
-
 		\medskip
 		\renewcommand\inskip{\bigskip}
     }
@@ -205,27 +204,11 @@
     \newcommand*\inskip{}
     \renewcommand\item[2]{%
 		\inskip%
-		{\bf\large ##1}
-		\ifstrempty{##2}{}{\\[0.3pt] {\it ({##2}) } }
+		{\Large ##1}
+		\ifstrempty{##2}{}{\\*[0.3pt] {\it ({##2}) } }
 		\renewcommand\inskip{\bigskip}
     }
 }
-
-% Use only \item inside this environment: no other macros
-% are allowed:
-%
-% |[
-% \item[optional: what has been achieved]{years}{subject}{notes}
-% ]|
-\newenvironment{yearlist}{%
-    \renewcommand\item[4][]{%
-		{\sc ##2} & {\bfseries ##3} \\
-		\ifstrempty{##1}{}{& {\sc ##1} \\}
-		& {\it ##4}\medskip
-    \\}
-    \tabularx{\linewidth}{rX}
-}
-{\endtabularx}
 
 
 % Use only \item inside this environment: no other macros
