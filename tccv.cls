@@ -92,7 +92,7 @@
     \begin{center}
 		\vskip-\lastskip%
 		{\usekomafont{part} #1} \medskip\\
-		{\Large Curriculum vit\ae}
+		{\Large Curriculum Vit\ae}
 		\bigskip\\
 	\end{center}
 	
