@@ -129,23 +129,6 @@
     \ifdefstrequal{\JOBNAME}{\PIVOT}{#2}{#3}%
 }
 
-% Renders a personal data box:
-%
-% |[
-% \personal[optional: web site without scheme (no http:// prefix)]
-%          {address}{phone number}{email}
-% ]|
-\newcommand\personal[4][]{%
-    \needspace{0.5\textheight}%
-    \newdimen\boxwidth%
-    \boxwidth=\dimexpr\linewidth-2\fboxsep\relax%
-    \colorbox[HTML]{BEDBE3}{%
-    \begin{tabularx}{\boxwidth}{c|X}
-    \Writinghand & {#2}\smallskip\\
-    \Telefon     & {#3}\smallskip\\
-    \Letter      & \href{mailto:#4}{#4}
-    \ifstrempty{#1}{}{\smallskip\\ \Lightning & \href{http://#1}{#1}}
-    \end{tabularx}}}
 
 
 % |[
@@ -182,7 +165,7 @@
     \setlength{\parindent}{7pt}
     \renewcommand\item[4]{%
 		\inskip%
-		\noindent ##4\dotfill ##1\\[4pt]
+		\noindent ##4\dotfill ##1\\[3pt]
     	\ifstrempty{##2}{}{\indent ##2\\[3pt]}
 		\indent {\Large ##3}
 		\medskip
