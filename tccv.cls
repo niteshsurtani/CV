@@ -30,7 +30,7 @@
 \LoadClass[10pt]{scrartcl}
 
 \setcounter{secnumdepth}{-1}
-\RequirePackage[hmargin=1.25cm,vmargin=2.3cm,twocolumn,columnsep=1.2cm]{geometry}
+\RequirePackage[hmargin=1.25cm,tmargin=1.7cm,bmargin=2cm,twocolumn,columnsep=1.2cm]{geometry}
 \RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,lipsum,tikz,fourier-orns}
 
 \newcommand{\sectionline}{%
@@ -95,14 +95,14 @@
 		{\Large Curriculum Vit\ae}
 		\bigskip\\
 	\end{center}
-	
+	\vspace{-0.7cm}
 	\hfill \href{http://bit.ly/pooria-azimi-cv}{http://bit.ly/pooria-azimi-cv}
-	\vspace{-1.5em}	
+	\vspace{-0.55cm}	
 	\center{
 		\hrulefill\hspace{0.2cm}
 		\floweroneleft\floweroneright
 		\hspace{0.2cm} \hrulefill}
-	\vspace{1em}	
+	\vspace{0.3cm}	
 	\bigskip\\
     ]}
 
@@ -138,7 +138,7 @@
     \newcommand*\inskip{}
     \renewcommand\item[5]{%
 		\inskip%
-		{\raggedleft ##1\\*[3pt]}
+		\ifstrempty{##1}{}{{\raggedleft ##1\\*[3pt]}}
     	\ifstrempty{##2}{}{##2\\*[3pt]}
 		{\Large ##3}
 		\begingroup
@@ -146,9 +146,8 @@
 			\vspace{5pt}
 			\leftskip1em
 			\rightskip\leftskip
-			##4
-			\\*[5pt]
-		    \ifstrempty{##5}{}{Technologies:{\it ##5}}
+			\ifstrempty{##4}{}{##4\\[5pt]}
+		    \ifstrempty{##5}{}{(##5)}
 			\par
 		\endgroup
 		\medskip
@@ -158,17 +157,36 @@
 {\bigskip}
 
 % |[
-% \item{date range}{conference}{subject}{role}
+% \item{course}{year}
 % ]|
-\newenvironment{teaching}{%
+\newenvironment{ta}{%
     \newcommand*\inskip{}
-    \setlength{\parindent}{7pt}
-    \renewcommand\item[4]{%
-		\inskip%
-		\noindent ##4\dotfill ##1\\[3pt]
-    	\ifstrempty{##2}{}{\indent ##2\\[3pt]}
-		\indent {\Large ##3}
+    {\Large Teacher Assistant}
+    \vspace{2pt}
+    \setlength{\parindent}{8pt}
+    \renewcommand\item[2]{%
 		\medskip
+			{\large ##1}\hfill{\color[HTML]{666666}(##2)}
+    	\vspace{2pt}
+		\renewcommand\inskip{\bigskip}
+    }
+}
+%\bigskip
+
+% |[
+% \item{date range}{conference}{subject}
+% ]|
+\newenvironment{presenter}{%
+    \newcommand*\inskip{}
+    {\Large Presenter}
+    \vspace{4pt}
+    \setlength{\parindent}{8pt}
+    \renewcommand\item[3]{%
+    	\ifstrempty{##2}{}{%
+			{\normalsize {\color[HTML]{666666}##2\hfill (##1)\\[3pt]}}
+		}
+		{\large ##3}
+		\vspace{9pt}
 		\renewcommand\inskip{\bigskip}
     }
 }
