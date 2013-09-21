@@ -6,6 +6,9 @@
 % Create by Nicola Fontana, the original files can be downloaded from:
 % http://dev.entidi.com/p/tccv/
 %
+% Modified *heavily* by Pooria Azimi:
+% https://github.com/pooriaazimi/CV/
+%
 \documentclass{tccv}
 
 \usepackage[english]{babel}
@@ -190,7 +193,7 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 
 \item{Database Design}{Winter '13}
 
-\item{Database Mining}{Spring '14}
+\item{Data Mining}{Spring '14}
 
 \end{ta}
 
@@ -292,6 +295,9 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 \newpage
 
 
+
+
+
 \section{Notable Projects}
 
 \begin{project_list}
@@ -300,12 +306,12 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
      {Iran Telecommunications Research Center}
      {Kavandeh Search Engine}
 	 {Improving link-based Web page ranking algorithms in a Persian-only search engine, using various statistical and heuristic methods.}
-     {
+     {%
      	Apache \href{http://nutch.apache.org}{Nutch} \&
 		\href{http://lucene.apache.org/solr/}{Solr} -- 
 		\href{http://www.webkit.org}{WebKit} -- 
 		\href{http://www.oracle.com/technetwork/java/}{Java} -- 
-		\href{https://en.wikipedia.org/wiki/C\%2B\%2B}{C++}
+		\href{https://en.wikipedia.org/wiki/C\%2B\%2B}{C++}%
 	}
 
 \vspace{-8pt}
@@ -313,48 +319,43 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 \item{March 2012 -- June 2012}
      {}
      {Visual WebPage Segmentation}
-	 {Detecting Web page structure using statistical analysis of the visual representation of the rendered page content, and using that structure for improving ranking algorithms in a search engine.\\
+	 {Detecting Web page structure using statistical analysis of the visual representation of the rendered page content, and using that structure for improving ranking algorithms in a search engine.%\\
 %(development halted after 4 months due to time constraints)
 }
-	 {
+	 {%
 	 	\href{http://nodejs.org}{Node.js} -- 
 		\href{http://phantomjs.org}{PhantomJS} -- 
-		\href{http://www.mongodb.org}{MongoDB}
+		\href{http://www.mongodb.org}{MongoDB}%
 	 }
 
-
 \vspace{-12pt}
-
 
 \item{January 2011 -- June 2011}
 	 {}
 	 {\href{https://github.com/baygan/Baygan}{Baygan Database}}
-	 {An extendable and clearly-modulated framework for introducing students to the intricacies of relational database design. Inspired by \href{http://www.stanford.edu/class/cs140/projects/pintos/pintos.html}{pintos}.\\
+	 {An extendable and clearly-modulated framework for introducing students to the intricacies of relational database design. Inspired by \href{http://www.stanford.edu/class/cs140/projects/pintos/pintos.html}{pintos}.%\\
 %(development halted after 6 months due to time constraints)
 }
-	 {
+	 {%
 	 	\href{http://www.oracle.com/technetwork/java/}{Java} -- 
-		\href{http://www.antlr.org}{ANTLR}
+		\href{http://www.antlr.org}{ANTLR}%
 	 }
-	 
 
 \vspace{-15pt}
-	 
 	 
 \item{June and July 2010}
 	 {}
 	 {Embedded Search Engine}
 	 {A complete, single-purpose search engine (written from scratch), designed to use minimal RAM (60MB) for indexing and searching the English Wikipedia, as the final project for the "Information Retrieval" course.}
-	 {
-		 \href{http://www.oracle.com/technetwork/java/}{Java}
+	 {%
+		 \href{http://www.oracle.com/technetwork/java/}{Java}%
 	 }
-
 
 \end{project_list}
 
 
 
-\vspace{-18pt}
+\vspace{-10pt}
 
 
 
@@ -372,132 +373,55 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 	 \href{http://fishshell.com}{fish shell}.}
 	 {}
 	 
-	 
-\vspace{-16pt}
+\end{project_list}
 
+\begin{oneline_projects}
 
-
-
-	
-	
-\item{}
-	 {}
-	 {\href{http://pooriaazimi.github.io/BetterDictionary/}{BetterDictionary}}
-	 {}
-	 {
+\item{\href{http://pooriaazimi.github.io/BetterDictionary/}{BetterDictionary}}
+	 {%
 	 	\href{https://en.wikipedia.org/wiki/Objective-C}{Objective-C} -- 
 		\href{https://en.wikipedia.org/wiki/Cocoa_(API)}{Cocoa} -- 
-		\href{https://en.wikipedia.org/wiki/Core_Data}{Core Data}
+		\href{https://en.wikipedia.org/wiki/Core_Data}{Core Data}%
 	 }	
 
-	 
-\item{}%{June 2012}
-	 {}
-	 {\href{https://github.com/pooriaazimi/Mini-Java}{MiniJava Parser}}
-	 {}
-%	 {A parser, complete with type checking, simple static analysis (of variable and function names in their scope), and an informative web-based UI, for the contrived \href{http://www.cambridge.org/resources/052182060X/MCIIJ2e/grammar.htm}{MiniJava} language, as the final project for the "Compiler Design" course.}
-	 {
+\item{\href{https://github.com/pooriaazimi/Mini-Java}{MiniJava Parser}}
+	 {%
 		 \href{http://coffeescript.org}{CoffeeScript} -- 
 		 \href{http://zaach.github.io/jison/}{jison} -- 
-		 \href{http://d3js.org}{d3.js}
+		 \href{http://d3js.org}{d3.js}%
 	 }
 
-
-
-
-
-\item{}%{January 2012}
-	 {}
-	 {\href{https://github.com/pooriaazimi/secure_file_system}{Secure File System}}
-	 {}
-%	 {A "secure" Web-based storage solution (i.e., all the encryption happens in the browser), with multiple user support, as the final project for the "Information Security" course.}
-	 {
+\item{\href{https://github.com/pooriaazimi/secure_file_system}{Secure File System}}
+	 {%
 		 \href{http://php.net}{PHP} -- 
-		 \href{http://www.mongodb.org}{MongoDB}
+		 \href{http://www.mongodb.org}{MongoDB}%
 	 }
 
-
-
-
-
-%\item{April 2012}
-%	 {}
-%	 {\href{http://www.data-mining-cup.de/en/review/dmc-2012/}{13\textsuperscript{th} International Data Mining Cup}}
-%	 {The AUT team created a bidding agent in Java for the "online" task (ranked 2nd in the Cup), and used a combination of statistical models, neural networks and SVMs for predicting the results of the "offline" task (ranked 13th).}
-%	 {
-%	 	\href{http://www.mathworks.com/products/matlab/}{MATLAB} -- 
-%	 	\href{http://www.oracle.com/technetwork/java/}{Java}
-%	 }
-
-
-
-
-%\item{July 2012}
-%	 {}
-%	 {University Registration System}
-%	 {A complete and realistic university registration system (server- and client-side), taking into account virtually all the intricacies of registration process, as the final project for "Database Design" lab.}
-%	 {
-%	 	\href{http://www.microsoft.com/en-us/sqlserver/default.aspx}{Microsoft SQL Server} -- 
-%		\href{https://en.wikipedia.org/wiki/C_Sharp_(programming_language)}{C\#}
-%	 }
-	 
-	
-	
-
-\item{}%{May 2013}
-	 {}
-	 {\href{https://github.com/pooriaazimi/twitter}{A Twitter clone}}
-	 {}
-%	 {A simple, but fully-featured Twitter clone (with users, tweets, timeline view, following, and an admin interface), as a learning exercise for Ruby on Rails Web framework.}
-	 {
+\item{\href{https://github.com/pooriaazimi/twitter}{A Twitter Clone!}}
+	 {%
 		 \href{http://rubyonrails.org}{Ruby on Rails} -- 
 		 \href{http://www.postgresql.org}{PostgreSQL} -- 
 		 \href{http://coffeescript.org}{CoffeeScript} -- 
-		 \href{http://sass-lang.com}{Sass}
+		 \href{http://sass-lang.com}{Sass}%
 	 }
 
 
-	
-	
-\item{}
-	 {}
-	 {\href{http://www.turnedondigital.com/?portfolio=farhang-iphone-app}{Farhang}}
-	 {}
-	 {
+\item{\href{http://www.turnedondigital.com/?portfolio=farhang-iphone-app}{Farhang}}
+	 {%
 	 	\href{https://en.wikipedia.org/wiki/Objective-C}{Objective-C} -- 
 		\href{https://en.wikipedia.org/wiki/Cocoa_Touch}{Cocoa Touch} -- 
-		\href{https://en.wikipedia.org/wiki/Core_Data}{Core Data}
+		\href{https://en.wikipedia.org/wiki/Core_Data}{Core Data}%
 	 }
 
-
-
-
-
-\item{}%{February 2013}
-	 {}
-	 {\href{https://github.com/pooriaazimi/adserver}{Ad Server}}
-	 {}
-%	 {A simple ad server (for tracking ad impressions), as a learning experience for Sinatra Web framework.}
-	 {
+\item{\href{https://github.com/pooriaazimi/adserver}{Ad Server}}
+	 {%
 	 	\href{https://www.ruby-lang.org/en/}{Ruby} -- 
 		\href{http://www.sinatrarb.com}{Sinatra} -- 
-		\href{http://www.sqlite.org}{SQLite}
+		\href{http://www.sqlite.org}{SQLite}%
 	 }
-	 
-	 
 
-%\item{2011 -- 2013}
-%	 {}
-%	 {OS X and iOS Apps}
-%	 {Multiple (mostly small) OS X and iOS apps, most recently \href{http://pooriaazimi.github.io/BetterDictionary/}{BetterDictionary} and (partially) \href{http://www.turnedondigital.com/?portfolio=farhang-iphone-app}{Farhang}.}
-%	 {
-%	 	\href{https://en.wikipedia.org/wiki/Objective-C}{Objective-C} -- 
-%		\href{https://en.wikipedia.org/wiki/Cocoa_(API)}{Cocoa} -- 
-%		\href{https://en.wikipedia.org/wiki/Core_Data}{Core Data}
-%	 }
 
-\end{project_list}
-
+\end{oneline_projects}
 
 
 
@@ -568,22 +492,30 @@ I'm also taking the following Coursera courses this semester:
 \section{References}
 
 \begin{description}
-
+%
 \item[Dr. Shahram Khadivi] (Assistant Professor, Amirkabir University of Techlonogy, Iran)
 \\
 \renewcommand{\tilde}{\raise.17ex\hbox{$\scriptstyle\sim$}}
 \href{http://ceit.aut.ac.ir/~khadivi/}{http://ceit.aut.ac.ir/{\tilde}khadivi/} -- \href{mailto:khadivi@aut.ac.ir}{Email}
-
+%
+\item[Dr. Mehdi Ebadzadeh] (Associate Professor, Amirkabir University of Techlonogy, Iran)
+\\
+\href{http://ceit.aut.ac.ir/~ebadzadeh/}{http://ceit.aut.ac.ir/{\tilde}ebadzadeh/} -- \href{mailto:ebadzadeh@aut.ac.ir}{Email}
+%
+\item[Dr. Mohammad Tahmati] (Associate Professor, Amirkabir University of Techlonogy, Iran)
+\\
+\href{http://www.aut.ac.ir/rahmati}{http://www.aut.ac.ir/rahmati} -- \href{mailto:rahmati@aut.ac.ir}{Email}
+%
 \item[Salim Malakouti] (Ph.D. Student, Pittsburgh University, PA, USA)
 \\
 \href{http://people.cs.pitt.edu/~salimm/}{Website} -- \href{mailto:salim.malakouti@gmail.com}{Email}
-
+%
 \item[Ali Ghanbari] M.Sc. Student, Amirkabir University of Techlonogy, Iran) -- \href{mailto:ali.ghanbari@aut.ac.ir}{Email}
-
+%
 \item[Ali Nadalizadeh] (Amirkabir University Alumnus -- CTO at \href{http://www.turnedondigital.com}{Turned on Digital}, UK)
 \\
 \href{http://ali.nadalizadeh.ir}{Website} -- \href{mailto:ali@turnedondigital.com}{Email}
-
+%
 \end{description}
 
 

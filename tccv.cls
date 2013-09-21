@@ -21,6 +21,10 @@
 %   macros, so the document is much easier to read (and customize);
 % * it is plain LaTeX/Koma-script, so the CV can be compiled
 %   with the usual tools, latex and pdflatex included.
+%
+% Modified *heavily* (again) by Pooria Azimi:
+% https://github.com/pooriaazimi/CV/
+%
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{tccv}
@@ -132,22 +136,21 @@
 
 
 % |[
-% \item{date range}{company}{role}{technologies}{description}
+% \item{date range}{company}{title}{technologies}{description}
 % ]|
 \newenvironment{project_list}{%
     \newcommand*\inskip{}
     \renewcommand\item[5]{%
 		\inskip%
-		\ifstrempty{##1}{}{{\raggedleft ##1\\*[3pt]}}
+		{\raggedleft ##1\\*[3pt]}
     	\ifstrempty{##2}{}{##2\\*[3pt]}
 		{\Large ##3}
 		\begingroup
 			\par
 			\vspace{5pt}
-			\leftskip1em
-			\rightskip\leftskip
-			\ifstrempty{##4}{}{##4\\[5pt]}
-		    \ifstrempty{##5}{}{(##5)}
+			\leftskip0.8em
+			##4
+		    \ifstrempty{##5}{}{\color[HTML]{666666}\\[3pt]\it( ##5 )}
 			\par
 		\endgroup
 		\medskip
@@ -155,6 +158,22 @@
     }
 }
 {\bigskip}
+
+
+% |[
+% \item{title}{technologies}
+% ]|
+\newenvironment{oneline_projects}{%
+    \newcommand*\inskip{}
+    \renewcommand\item[2]{%
+		{\Large ##1}\\
+		{\color[HTML]{666666}\it ( ##2 )}
+		\medskip\\
+		\renewcommand\inskip{\bigskip}
+    }
+}
+{\bigskip}
+
 
 % |[
 % \item{course}{year}
@@ -193,13 +212,8 @@
 {\bigskip}
     
     
-% Every \item can be followed by one or more paragraphs
-% of description:
-%
 % |[
-% \item{subject}{specialized}
-%
-% Listing of research interests.
+% \item{subject}{specialized_topic}
 % ]|
 \newenvironment{research_interest}{%
     \newcommand*\inskip{}
@@ -212,9 +226,6 @@
 }
 
 
-% Use only \item inside this environment: no other macros
-% are allowed:
-%
 % |[
 % \item{fact}{description}
 % ]|
