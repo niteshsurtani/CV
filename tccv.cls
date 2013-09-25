@@ -149,8 +149,8 @@
 			\par
 			\vspace{5pt}
 			\leftskip0.8em
-			##4
-		    \ifstrempty{##5}{}{\color[HTML]{666666}\\[3pt]\it( ##5 )}
+			##4%
+		    \ifstrempty{##5}{}{\color[HTML]{666666}\\[3pt]\it( ##5 )}%
 			\par
 		\endgroup
 		\medskip
@@ -202,7 +202,7 @@
     \setlength{\parindent}{8pt}
     \renewcommand\item[3]{%
     	\ifstrempty{##2}{}{%
-			{\normalsize {\color[HTML]{666666}##2\hfill (##1)\\[3pt]}}
+			{\color[HTML]{666666}##2\hfill (##1)\\[3pt]}
 		}
 		{\large ##3}
 		\vspace{9pt}
