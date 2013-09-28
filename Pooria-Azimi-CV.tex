@@ -21,6 +21,7 @@
 \usepackage{array}
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage{layout}
 
 \fancyhf{}
 \fancyfoot[L]{Pooria Azimi -- Curriculum Vit\ae}
@@ -28,8 +29,15 @@
 \fancyfoot[R]{\href{http://bit.ly/pooria-azimi-cv}{http://bit.ly/pooria-azimi-cv}}
 \renewcommand\headrulewidth{0pt}
 \renewcommand\footrulewidth{1pt}
+\setlength{\footskip}{22pt}
+
+\renewcommand\rmdefault{lmr}
+\renewcommand\sfdefault{lmss}
+\renewcommand\ttdefault{lmtt}
+
 \pagestyle{fancy}
 
+\renewcommand{\tilde}{\raise.17ex\hbox{$\scriptstyle\sim$}}
 
 
 \begin{document}
@@ -46,14 +54,17 @@
 
 \begin{research_interest}
 
-\item{Database and Information Retrieval\\[4pt]Systems}
+%\item{Database and Information Retrieval\\[4pt]Systems}
+%     {}
+
+\item{Database and IR Systems}
      {}
 
 \item{Operating Systems}
      {File systems -- Microkernels}
 
 \item{Concurrent Programming}
-     {the "Actor Model"}
+     {the ``Actor Model''}
 
 \item{Human-Computer Interaction}
      {}
@@ -64,23 +75,47 @@
 
 
 
-\vspace{6.5pt}
+%\vspace{6.5pt}
 
 
 
 \section{Education}
 
-B.Sc. in {\bf Computer Science}, 2014 {\it(expected)}
-\\[1.5pt]
 {\bf \href{https://en.wikipedia.org/wiki/Amirkabir_University_of_Technology}{Amirkabir University of Technology}} (Tehran, Iran)
-\\[1.7pt]
-GPA (last 60 CS credits): {\bf 16.5}/20
-\bigskip\\
-Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2})
+
+\hspace{7pt} B.Sc. in {\bf Computer Science}, 2014 {\it(expected)}
+
+\hspace{7pt} GPA (last 60 CS credits): {\bf 16.5}/20
+
+
+%\vspace{10pt}
 
 
 
-\vspace{10pt}
+
+\section{Awards and Honors}
+
+\begin{list}{\labelitemi}{\leftmargin=1em}
+
+\item
+{\bf 2\textsuperscript{nd} place} at \href{http://www.data-mining-cup.de/en/review/dmc-2012/}{\mbox{13\textsuperscript{th} International Data Mining Cup} (Berlin)}
+\\
+{\it Our team created a bidding agent in Java for the \mbox{``online''} task, and used a combination of statistical models, \mbox{neural} networks and SVMs for predicting the results of the ``offline'' task.}
+
+
+
+\item
+Ranked 590 (among \tilde400,000 participants) in 2008 \mbox{National} Matriculation Exam ({\bf top \%0.2})
+
+
+\end{list}
+
+
+
+
+
+
+
 
 
 
@@ -99,7 +134,11 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 \end{factlist}
 
 
+\vspace{-4pt}
+
 \sectionline
+
+\vspace{-10pt}
 
 
 {\renewcommand{\arraystretch}{1.6}
@@ -118,7 +157,7 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 			{\bf Total} & {\bf 109}
 		\end{tabular}
 		&
- 	   	\begin{tabular}{R{2.3cm}|L{0.8cm}} 
+ 	   	\begin{tabular}{R{2cm}|L{0.8cm}} 
 			Verbal Reasoning & 160+\\
 			Quantitative Reasoning & 170\\
 			Analytical Writing & 4+
@@ -130,9 +169,16 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 
 {\color[HTML]{444444}
 \textsuperscript{$*$} {\it Only the paper-based GRE test is administrated in Iran (results: \textbf{Dec 9\textsuperscript{th}}). The above table is my \uline{expected} scores based on a few (\href{http://store.ets.org/store/ets/en_US/pd/ThemeID.12805600/productID.253480200}{official} and \href{http://www.ets.org/gre/revised_general/prepare/powerprep2/}{ETS--provided}) practice tests.}
-\medskip\\
+\\[8pt]
 \textsuperscript{$**$} {\it I'm taking another iBT test (results: \textbf{Nov 12\textsuperscript{th}}) to improve my score in the Speaking section.}
 }
+
+
+
+
+
+
+
 
 
 
@@ -149,7 +195,7 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 	    \Letter      & 
 	    \href{mailto:pooriaazimi@gmail.com}{pooriaazimi@gmail.com}
 	    \\[3pt]
-	    %\Mundus
+%	    \Mundus
 	     & 
 		\href{https://github.com/pooriaazimi/}{\includegraphics[width=13pt]{Logos/Github.pdf}}
 		\href{http://stackoverflow.com/users/347353/pooria-azimi}{\includegraphics[width=15pt]{Logos/StackOverflow.pdf}}
@@ -168,13 +214,6 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 
 
 
-\section{Awards}
-
-\begin{factlist}
-	
-	\item{2\textsuperscript{nd} place}{\href{http://www.data-mining-cup.de/en/review/dmc-2012/}{\mbox{13\textsuperscript{th} International Data Mining Cup}, Berlin, Germany -- 2012}}
-
-\end{factlist}
 
 
 
@@ -237,57 +276,100 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 
 
 
+
+
 \section{Technical skills}
 
-\begin{factlist}
 
-\item{Languages}
-     {
-     \href{http://www.oracle.com/technetwork/java/}{Java} -- 
-     \href{https://www.ruby-lang.org/en/}{Ruby} -- 
-     \href{http://www.erlang.org}{Erlang} -- 
-     \href{https://en.wikipedia.org/wiki/C_(programming_language)}{C} -- 
-     \href{http://php.net}{PHP} -- 
-     \href{http://www.scala-lang.org}{Scala} -- 
-     \href{https://en.wikipedia.org/wiki/Objective-C}{Objective-C} -- 
-     \href{http://coffeescript.org}{CoffeeScript}%
-     }
+\textsf{\textbf{Programming Languages}}
+	 
+\hspace{3pt}%
+Experienced:
+\mbox{\href{http://www.oracle.com/technetwork/java/}{\bf Java} -- %
+     \href{https://www.ruby-lang.org/en/}{\bf Ruby} -- %
+     \href{https://en.wikipedia.org/wiki/Objective-C}{\bf Objective-C} -- %
+     \href{http://coffeescript.org}{\bf CoffeeScript}%
+}
 
-\item{Databases}
-     {
-     \href{http://www.postgresql.org}{PostgreSQL} -- 
-     \href{http://www.mongodb.org}{MongoDB} -- 
-     \href{http://www.neo4j.org}{Neo4j} -- 
-     \href{http://redis.io}{Redis} -- 
-     \href{http://www.microsoft.com/en-us/sqlserver/default.aspx}{Microsoft SQL Server}
-     }
+\hspace{3pt}%
+Familiar:
+\mbox{\href{http://www.scala-lang.org}{\bf Scala} -- %
+     \href{https://en.wikipedia.org/wiki/C_(programming_language)}{\bf C} -- %
+     \href{http://www.erlang.org}{\bf Erlang} \& %
+     \href{http://elixir-lang.org}{\bf Elixir} --  %
+     \href{http://schemers.org}{\bf Scheme} -- %
+     \href{http://php.net}{\bf PHP}%
+}
 
-\item{Web}
-     {
-     \href{http://nodejs.org}{Node.js} -- 
-     \href{http://rubyonrails.org}{Ruby on Rails} -- 
-     \href{http://php.net}{PHP} -- 
-     \href{http://www.sinatrarb.com}{Sinatra} -- 
-     \href{http://backbonejs.org}{Backbone.js} -- 
-     \href{http://emberjs.com}{Ember.js}
-     }
 
-\item{Misc.}
-     {
-     \href{http://git-scm.com}{git} -- 
-     \href{http://www.selenic.com/mercurial/}{hg} -- 
-     \href{http://www.vim.org}{vi} -- 
-     \href{http://awk.info}{awk} -- 
-     \href{http://www.gnu.org/software/sed/}{sed} -- 
-     \href{http://nginx.org/en/}{nginx} -- 
-     \href{http://www.webkit.org}{WebKit} -- 
-     \href{http://www.antlr.org}{ANTLR} -- 
-     \href{http://en.wikipedia.org/wiki/Behavior-driven_development}{BDD} -- 
-     \href{http://www.latex-project.org}{\LaTeX}
-     }
 
-\end{factlist}
+\vspace{9pt}
 
+\textsf{\textbf{Databases}}
+	 
+\hspace{3pt}%
+Used extensively: %
+     \href{http://www.mongodb.org}{\bf MongoDB} -- %
+     \href{http://www.postgresql.org}{\bf PostgreSQL} -- %
+     \href{http://redis.io}{\bf Redis}%
+
+\hspace{3pt}%
+Used occasionally: %
+     \href{http://www.neo4j.org}{\bf Neo4j} -- %
+     \href{http://www.mysql.com}{\bf MySQL} -- %
+     \href{http://www.microsoft.com/en-us/sqlserver/default.aspx}{\bf MS SQL Server}%
+
+
+
+
+\vspace{9pt}
+
+\textsf{\textbf{Server-side Web development}}
+ 
+\hspace{3pt}%
+Experienced: %
+\mbox{\href{http://nodejs.org}{\bf Node.js} -- %
+     \href{http://rubyonrails.org}{\bf Ruby on Rails} -- %
+     \href{http://php.net}{\bf PHP} -- %
+     \href{http://www.sinatrarb.com}{\bf Sinatra}%
+}
+
+
+
+\vspace{9pt}
+
+\textsf{\textbf{Client-side Web development}}
+	 
+\hspace{3pt}%
+Limited experience: %
+     \href{http://backbonejs.org}{\bf Backbone.js} -- %
+     \href{http://emberjs.com}{\bf Ember.js}%
+
+
+
+\vspace{9pt}
+
+\textsf{\textbf{Miscellaneous}}
+
+\hspace{3pt}%
+Source Control Management (%
+	\href{http://git-scm.com}{\bf git} \& %
+	\href{http://www.selenic.com/mercurial/}{\bf hg}%
+)%
+
+\hspace{3pt}%
+UNIXish tools (%
+	\href{http://www.vim.org}{\bf vi}, %
+	\href{http://awk.info}{\bf awk}, %
+	\href{http://www.gnu.org/software/sed/}{\bf sed}, etc.%
+)%
+
+\hspace{3pt}%	
+	\href{http://nginx.org/en/}{\bf nginx} -- 
+	\href{http://www.webkit.org}{\bf WebKit} -- 
+	\href{http://www.antlr.org}{\bf ANTLR} -- 
+	\href{http://en.wikipedia.org/wiki/Behavior-driven_development}{\bf BDD} -- 
+	\href{http://www.latex-project.org}{\bf \LaTeX}
 
 
 
@@ -314,11 +396,11 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 		\href{https://en.wikipedia.org/wiki/C\%2B\%2B}{C++}%
 	}
 
-\vspace{-8pt}
+\vspace{-6pt}
 
 \item{March 2012 -- June 2012}
      {}
-     {Visual WebPage Segmentation}
+     {Visual WebPage Segmentation {\large (VPS)}}
 	 {Detecting Web page structure with statistical \mbox{analysis} of the visual representation of the rendered page content, and using that structure for improving ranking algorithms in a search engine.%\\
 %(development halted after 4 months due to time constraints)
 }
@@ -328,7 +410,7 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 		\href{http://www.mongodb.org}{MongoDB}%
 	 }
 
-\vspace{-12pt}
+\vspace{-6pt}
 
 \item{January 2011 -- June 2011}
 	 {}
@@ -341,12 +423,12 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 		\href{http://www.antlr.org}{ANTLR}%
 	 }
 
-\vspace{-15pt}
+\vspace{-6pt}
 	 
 \item{June and July 2010}
 	 {}
 	 {Embedded Search Engine}
-	 {A complete, single-purpose search engine (\mbox{written} from scratch), designed to use minimal RAM (60MB) for indexing and searching the English Wikipedia, as the final project for "\mbox{Information} Retrieval" course.}
+	 {A complete, single-purpose search engine (\mbox{written} from scratch), designed to use minimal RAM (60MB) for indexing and searching the English Wikipedia, as the final project for ``\mbox{Information} Retrieval'' course.}
 	 {%
 		 \href{http://www.oracle.com/technetwork/java/}{Java}%
 	 }
@@ -359,6 +441,10 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 
 
 
+
+
+
+
 \section{Other Projects}
 
 \begin{project_list}
@@ -366,9 +452,12 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 \item{2010 -- 2013}
 	 {}
 	 {Open Source Contributions}
-	 {Contributing to multiple Open Source projects (code, documentation, and IRC support), \mbox{including}
-	 \href{https://github.com/ggreer/the_silver_searcher}{Ag (the silver searcher)}, 
-	 \href{http://bitbucket.org/sjl/hg-prompt/}{hg-prompt}, \href{https://github.com/allending/Kiwi}{Kiwi}, 
+	 {Contributing to multiple Open Source projects (code, documentation, bug report, and IRC support), \mbox{including}
+	 \href{http://phantomjs.org}{PhantomJS}, 
+	 \href{https://github.com/ggreer/the_silver_searcher}{Ag (the silver searcher)},
+	 \href{http://bitbucket.org/sjl/hg-prompt/}{hg-prompt},
+	 \href{https://github.com/allending/Kiwi}{Kiwi},
+	 \href{https://github.com/clowwindy/shadowsocks/}{shadowsocks}, 
 	 \href{http://fishshell.com}{fish shell}, and 
 	 \href{https://github.com/mxcl/homebrew}{Homebrew}.}
 	 {}
@@ -391,12 +480,6 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 		 \href{http://d3js.org}{d3.js}%
 	 }
 
-\item{\href{https://github.com/pooriaazimi/secure_file_system}{Secure File System}}
-	 {%
-		 \href{http://php.net}{PHP} -- 
-		 \href{http://www.mongodb.org}{MongoDB}%
-	 }
-
 \item{\href{https://github.com/pooriaazimi/twitter}{A Twitter Clone!}}
 	 {%
 		 \href{http://rubyonrails.org}{Ruby on Rails} -- 
@@ -412,7 +495,12 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 		\href{https://en.wikipedia.org/wiki/Cocoa_Touch}{Cocoa Touch} -- 
 		\href{https://en.wikipedia.org/wiki/Core_Data}{Core Data}%
 	 }
-	 
+
+\item{\href{https://github.com/pooriaazimi/secure_file_system}{Secure File System}}
+	 {%
+		 \href{http://php.net}{PHP} -- 
+		 \href{http://www.mongodb.org}{MongoDB}%
+	 }
 
 \item{\href{https://github.com/pooriaazimi/adserver}{Ad Server}}
 	 {%
@@ -431,28 +519,6 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 
 
 
-\vspace{-30pt}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\vspace{10pt}
-
-
-
-
-
-
 
 
 
@@ -461,27 +527,27 @@ Ranked 590 (among 400,000+) in 2009 National Matriculation Exam ({\bf top \%0.2}
 
 In addition to attending my normal classes, I have watched the videos, and finished the assignments, of a dozen freely-available online courses, \mbox{including} the following CS-related ones:
 
-\begin{itemize}
+\begin{list}{\labelitemi}{\leftmargin=1em}
 
-\item MIT's legendary \href{http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/}{Structure and Interpretation of Computer Programs} {\it(1986 -- by \href{https://en.wikipedia.org/wiki/Hal_Abelson}{Harold \mbox{Abelson}} and \href{https://en.wikipedia.org/wiki/Gerald_Jay_Sussman}{Gerald Jay Sussman})}
+\item MIT's legendary \href{http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/}{Structure and Interpretation of Computer Programs} {\it(1986 -- by \href{https://en.wikipedia.org/wiki/Hal_Abelson}{Harold Abelson} and \href{https://en.wikipedia.org/wiki/Gerald_Jay_Sussman}{Gerald Jay Sussman})}
 
 \item UC Berkley's \href{http://www.cs.berkeley.edu/~kubitron/courses/cs162-F08/}{Operating Systems and Systems Programming} {\it(2008)}
 
 \item Harvard's \href{http://cs50.tv/2010/fall/}{Introduction to Computer Science} {\it(2010)} and \href{http://cs75.tv/2010/fall/}{Building Dynamic Websites} {\it(2010)}
 
-\item Stanford's \href{http://see.stanford.edu/see/courseinfo.aspx?coll=824a47e1-135f-4508-a5aa-866adcae1111}{Programming Methodology} {\it(2007)}, \href{http://see.stanford.edu/see/courseinfo.aspx?coll=11f4f422-5670-4b4c-889c-008262e09e4e}{Programming Abstractions} {\it(2008)}, \href{http://see.stanford.edu/see/courseinfo.aspx?coll=2d712634-2bf1-4b55-9a3a-ca9d470755ee}{\mbox{Programming} Paradigms} {\it(2008)}, and \href{http://www.stanford.edu/class/cs193p}{iPhone Application \\ Programming} {\it(2013)}
+\item Stanford's \href{http://see.stanford.edu/see/courseinfo.aspx?coll=824a47e1-135f-4508-a5aa-866adcae1111}{Programming Methodology} {\it(2007)}, \href{http://see.stanford.edu/see/courseinfo.aspx?coll=11f4f422-5670-4b4c-889c-008262e09e4e}{\mbox{Programming} Abstractions} {\it(2008)}, \href{http://see.stanford.edu/see/courseinfo.aspx?coll=2d712634-2bf1-4b55-9a3a-ca9d470755ee}{\mbox{Programming} Paradigms} {\it(2008)}, and \href{http://www.stanford.edu/class/cs193p}{iPhone Application Programming} {\it(2013)}
 	
-\end{itemize}
+\end{list}
 
 I'm also taking the following Coursera courses this semester: 
 
-\begin{itemize}
+\begin{list}{\labelitemi}{\leftmargin=1em}
 
 \item EPFL's \href{https://www.coursera.org/course/progfun}{Functional Programming Principles in Scala} {\it(2013 -- by \href{https://en.wikipedia.org/wiki/Martin_Odersky}{Martin Odersky})}
 
-\item EPFL/Typesafe Inc.'s \href{https://www.coursera.org/course/reactive}{Principles of Reactive\\ Programming} {\it(2013 -- by \href{https://en.wikipedia.org/wiki/Martin_Odersky}{Martin Odersky}, \mbox{et al.})}
+\item EPFL/Typesafe Inc.'s \href{https://www.coursera.org/course/reactive}{Principles of Reactive\\ Programming} {\it(2013 -- by \href{https://en.wikipedia.org/wiki/Martin_Odersky}{Martin Odersky}, et al.)}
 
-\end{itemize}
+\end{list}
 
 
 
@@ -493,32 +559,16 @@ I'm also taking the following Coursera courses this semester:
 \section{References}
 
 \begin{description}
-%
-\item[Dr. Shahram Khadivi] (Assistant Professor, Amirkabir University of Technology, Iran)
+\item[Shahram Khadivi] (Assistant Professor, Amirkabir \\University of Technology, Iran)
 \\
-\renewcommand{\tilde}{\raise.17ex\hbox{$\scriptstyle\sim$}}
 \href{http://ceit.aut.ac.ir/~khadivi/}{http://ceit.aut.ac.ir/{\tilde}khadivi/} -- \href{mailto:khadivi@aut.ac.ir}{Email}
-%
-\item[Dr. Mehdi Ebadzadeh] (Associate Professor, \mbox{Amirkabir} University of Technology, Iran)
-\\
-\href{http://ceit.aut.ac.ir/~ebadzadeh/}{http://ceit.aut.ac.ir/{\tilde}ebadzadeh/} -- \href{mailto:ebadzadeh@aut.ac.ir}{Email}
-%
-\item[Dr. Mohammad Rahmati] (Associate Professor, \\Amirkabir University of Technology, Iran)
-\\
-\href{http://www.aut.ac.ir/rahmati}{http://www.aut.ac.ir/rahmati} -- \href{mailto:rahmati@aut.ac.ir}{Email}
-%
-\item[Ali Nadalizadeh] (Amirkabir University Alumnus -- CTO at \href{http://www.turnedondigital.com}{Turned on Digital}, UK)
-\\
-\href{http://ali.nadalizadeh.ir}{Website} -- \href{mailto:ali@turnedondigital.com}{Email}
-%
-\item[Salim Malakouti] (Ph.D. Student, Pittsburgh \mbox{University}, PA, USA)
-\\
-\href{http://people.cs.pitt.edu/~salimm/}{Website} -- \href{mailto:salim.malakouti@gmail.com}{Email}
-%
-\item[Ali Ghanbari] (M.Sc. Student, Amirkabir \mbox{University} of Technology, Iran) -- \href{mailto:ali.ghanbari@aut.ac.ir}{Email}
-%
 \end{description}
 
+
+For much of the past 3 years, I have been working closely with Dr.\ Khadivi on multiple projects (Kavandeh, VPS, Baygan), Berlin Data Mining Cup, and now my thesis project. I have also been a Teacher Assistant for two of Dr.\ Khadivi's courses (3 years for ``Database Design'' and one semester for ``Data Mining'').
+\\[7pt]
+\uline{More references are available upon request}.
+%, of course, but I've included only Dr.\ Khadivi's address above because I think he is in the best position to judge my academic and technical background.
 
 
 

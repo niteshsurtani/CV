@@ -34,7 +34,7 @@
 \LoadClass[10pt]{scrartcl}
 
 \setcounter{secnumdepth}{-1}
-\RequirePackage[hmargin=1.25cm,tmargin=1.7cm,bmargin=2cm,twocolumn,columnsep=1.2cm]{geometry}
+\RequirePackage[hmargin=1.25cm,tmargin=1.2cm,bmargin=1.3cm,twocolumn,columnsep=1.2cm]{geometry}
 \RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,lipsum,tikz,fourier-orns}
 
 \newcommand{\sectionline}{%
@@ -82,7 +82,7 @@
 \pagestyle{empty}
 \setlength\parindent{0pt}
 \color[HTML]{303030} % Default foreground color
-\definecolor{link}{HTML}{5080AA} % Hyperlinks
+\definecolor{link}{HTML}{457291} % Hyperlinks
 \hypersetup{colorlinks,breaklinks,urlcolor=link,linkcolor=link}
 \setkomafont{disposition}{\color[HTML]{801010}}
 \setkomafont{section}{\scshape\Large\mdseries}
@@ -144,13 +144,13 @@
 		\inskip%
 		{\raggedleft ##1\\*[3pt]}
     	\ifstrempty{##2}{}{##2\\*[3pt]}
-		{\Large ##3}
+		{\Large\bf ##3}
 		\begingroup
 			\par
-			\vspace{5pt}
+			\vspace{2pt}
 			\leftskip0.8em
 			##4%
-		    \ifstrempty{##5}{}{\color[HTML]{666666}\\[3pt]\it( ##5 )}%
+		    \ifstrempty{##5}{}{\color[HTML]{666666}\\[3pt]\it(##5)}%
 			\par
 		\endgroup
 		\medskip
@@ -166,8 +166,8 @@
 \newenvironment{oneline_projects}{%
     \newcommand*\inskip{}
     \renewcommand\item[2]{%
-		{\Large ##1}\\
-		{\color[HTML]{666666}\it ( ##2 )}
+		{\Large\bf ##1}\\
+		{\color[HTML]{666666}\it (##2)}
 		\medskip\\
 		\renewcommand\inskip{\bigskip}
     }
@@ -185,7 +185,7 @@
     \setlength{\parindent}{8pt}
     \renewcommand\item[2]{%
 		\medskip
-			{\large ##1}\hfill{\color[HTML]{666666}(##2)}
+			{\large\bf ##1}\hfill{\color[HTML]{666666}(##2)}
     	\vspace{2pt}
 		\renewcommand\inskip{\bigskip}
     }
@@ -204,7 +204,7 @@
     	\ifstrempty{##2}{}{%
 			{\color[HTML]{666666}##2\hfill (##1)\\[3pt]}
 		}
-		{\large ##3}
+		{\large\bf ##3}
 		\vspace{9pt}
 		\renewcommand\inskip{\bigskip}
     }
@@ -219,7 +219,7 @@
     \newcommand*\inskip{}
     \renewcommand\item[2]{%
 		\inskip%
-		{\Large ##1}
+		{\Large\bf ##1}
 		\ifstrempty{##2}{}{\\*[0.3pt] {\it ({##2}) } }
 		\renewcommand\inskip{\bigskip}
     }
