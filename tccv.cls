@@ -150,7 +150,7 @@
 			\vspace{2pt}
 			\leftskip0.8em
 			##4%
-		    \ifstrempty{##5}{}{\color[HTML]{666666}\\[3pt]\it(##5)}%
+		    \ifstrempty{##5}{}{\color[HTML]{666666}\\[3pt]{\it(##5)}}%
 			\par
 		\endgroup
 		\medskip
@@ -179,16 +179,15 @@
 % \item{course}{year}
 % ]|
 \newenvironment{ta}{%
-    \newcommand*\inskip{}
-    {\Large Teacher Assistant}
-    \vspace{2pt}
-    \setlength{\parindent}{8pt}
+    \newcommand*\inskip{}%
+    {\Large Teacher Assistant}%
+    \vspace{2pt}%
     \renewcommand\item[2]{%
-		\medskip
-			{\large\bf ##1}\hfill{\color[HTML]{666666}(##2)}
-    	\vspace{2pt}
-		\renewcommand\inskip{\bigskip}
-    }
+		\medskip%
+		\hspace{8pt}{\large\bf ##1}\hfill{\color[HTML]{777777}{\sf(##2)}}%
+    	\vspace{2pt}%
+		\renewcommand\inskip{\bigskip}%
+	}%
 }
 %\bigskip
 
@@ -196,18 +195,15 @@
 % \item{date range}{conference}{subject}
 % ]|
 \newenvironment{presenter}{%
-    \newcommand*\inskip{}
-    {\Large Presenter}
-    \vspace{4pt}
-    \setlength{\parindent}{8pt}
+    \newcommand*\inskip{}%
+    {\Large Presenter}%
+    \vspace{4pt}%
     \renewcommand\item[3]{%
-    	\ifstrempty{##2}{}{%
-			{\color[HTML]{666666}##2\hfill (##1)\\[3pt]}
-		}
-		{\large\bf ##3}
-		\vspace{9pt}
-		\renewcommand\inskip{\bigskip}
-    }
+    	\hspace{5pt}{\sf\color[HTML]{777777}##2\hfill (##1)\\[3pt]}%
+    	\hspace{4pt}{\large\bf ##3}%
+		\vspace{9pt}%
+		\renewcommand\inskip{\bigskip}%
+    }%
 }
 {\bigskip}
     

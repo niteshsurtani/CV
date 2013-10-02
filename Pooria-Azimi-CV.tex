@@ -40,6 +40,7 @@
 \pagestyle{fancy}
 
 \renewcommand{\tilde}{\raise.17ex\hbox{$\scriptstyle\sim$}}
+\newcommand{\plus}{\raisebox{.1\height}{\scalebox{.8}{+}}}
 
 
 \begin{document}
@@ -102,7 +103,7 @@
 \item
 {\bf 2\textsuperscript{nd} place} at \href{http://www.data-mining-cup.de/en/review/dmc-2012/}{\mbox{13\textsuperscript{th} International Data Mining Cup} (Berlin)}
 \\
-{\it Our team created a bidding agent in Java for the \mbox{``online''} task, and used a combination of statistical models, \mbox{neural} networks and SVMs for predicting the results of the \mbox{``offline''} task.}
+{\it Our team created a bidding agent in Java for the \mbox{``online''} task, and used a combination of statistical models, \mbox{neural} networks and SVMs (with \href{http://www.mathworks.com/products/matlab/}{MATLAB} and \href{http://www.cs.waikato.ac.nz/ml/weka/}{Weka}) for predicting the results of the \mbox{``offline''} task.}
 
 
 
@@ -170,7 +171,7 @@ Ranked 590 (among \tilde400,000 participants) in 2008 \mbox{National} Matriculat
 
 
 {\color[HTML]{444444}
-\textsuperscript{$*$} {\it Only the paper-based GRE test is administered in Iran (results: \textbf{Dec 9\textsuperscript{th}}). The above table is my \uline{expected} scores based on a few (\href{http://store.ets.org/store/ets/en_US/pd/ThemeID.12805600/productID.253480200}{official} and \href{http://www.ets.org/gre/revised_general/prepare/powerprep2/}{ETS--provided}) practice tests.}
+\textsuperscript{$*$} {\it Only the paper-based GRE test is administered in Iran (results: \textbf{Dec 9\textsuperscript{th}}). This table is my \uline{expected} scores based on a few (\href{http://store.ets.org/store/ets/en_US/pd/ThemeID.12805600/productID.253480200}{official} and \href{http://www.ets.org/gre/revised_general/prepare/powerprep2/}{ETS--provided}) practice tests.}
 \\[8pt]
 \textsuperscript{$**$} {\it I'm taking another iBT test (results: \textbf{Nov 12\textsuperscript{th}}) to improve my score in the Speaking section.}
 }
@@ -193,7 +194,7 @@ Ranked 590 (among \tilde400,000 participants) in 2008 \mbox{National} Matriculat
 	    \Writinghand & 
 	    {365, E2, Ekbatan, Tehran, Iran}\smallskip\\
 	    \Telefon     & 
-	    {+98 (935) 431 26 45}\smallskip\\
+	    {\plus{ }98 (935) 431 26 45}\smallskip\\
 	    \Letter      & 
 	    \href{mailto:pooriaazimi@gmail.com}{pooriaazimi@gmail.com}
 	    \\[3pt]
@@ -255,7 +256,7 @@ Ranked 590 (among \tilde400,000 participants) in 2008 \mbox{National} Matriculat
 
 \item{Spring '12}
 	 {4th National Linux Festival}
-	 {Advanced Unix Command-line}
+	 {\href{http://bit.ly/linux2012}{Advanced Unix Command-line}}
 
 \item{Spring '12}
 	 {AUT-CEIT Computing Festival}
@@ -264,11 +265,11 @@ Ranked 590 (among \tilde400,000 participants) in 2008 \mbox{National} Matriculat
 
 \item{Spring '13}
 	 {AUT Database Workshop}
-	 {PostgreSQL vs. MySQL}
+	 {\href{http://bit.ly/aut-postgresql}{PostgreSQL vs. MySQL}}
 
 \item{Spring '13}
 	 {AUT Database Workshop}
-	 {Introduction to MongoDB}
+	 {\href{http://bit.ly/aut-mongodb}{Introduction to MongoDB}}
 
 \item{Spring '13}
 	 {AUT Database Workshop}
@@ -374,10 +375,10 @@ UNIXish tools (%
 )%
 
 \hspace{2pt}%	
-	\href{http://nginx.org/en/}{\bf nginx} -- 
-	\href{http://www.webkit.org}{\bf WebKit} -- 
-	\href{http://www.antlr.org}{\bf ANTLR} -- 
-	\href{http://en.wikipedia.org/wiki/Behavior-driven_development}{\bf BDD} -- 
+	\href{http://nginx.org/en/}{\bf nginx} -- %
+	\href{http://www.webkit.org}{\bf WebKit} -- %
+	\href{http://www.antlr.org}{\bf ANTLR} -- %
+	\href{http://en.wikipedia.org/wiki/Behavior-driven_development}{\bf BDD} -- %
 	\href{http://www.latex-project.org}{\bf \LaTeX}
 
 
@@ -389,7 +390,7 @@ UNIXish tools (%
 
 
 
-\section{Notable Projects}
+\section{Notable Academic Projects}
 
 \begin{project_list}
 
@@ -398,13 +399,13 @@ UNIXish tools (%
      {Kavandeh Search Engine}
 	 {Improving link-based Web page ranking algorithms in a Persian-only search engine, using various statistical and heuristic methods.
 	 \\[1.5pt]
-	 Our team of two heavily improved upon Nutch's \mbox{scoring}, ranking, parsing, crawling, and spam detection submodules, and used WebKit's rendering engine for detecting semantically siugnificant parts of a (rendered) Web page and weighting links in these areas proportionally (this \mbox{latter} scheme was dropped eventually due to its being computationally expensive).}
+	 Our team of two heavily improved upon Nutch's \mbox{scoring}, parsing, crawling, and spam detection submodules, and used WebKit's rendering engine for detecting \mbox{semantically} significant parts of a (rendered) Web page and \mbox{assigning} more weight to links in such areas (this feature proved to be computationally expensive and was eventually dropped).}
      {%
      	Apache \href{http://nutch.apache.org}{Nutch} \&
-		\href{http://lucene.apache.org/solr/}{Solr} -- 
-		\href{http://www.webkit.org}{WebKit} -- 
-		\href{http://www.oracle.com/technetwork/java/}{Java} -- 
-		\href{https://en.wikipedia.org/wiki/C\%2B\%2B}{C++}%
+		\href{http://lucene.apache.org/solr/}{Solr} -- %
+		\href{http://www.webkit.org}{WebKit} -- %
+		\href{http://www.oracle.com/technetwork/java/}{Java} -- %
+		\href{https://en.wikipedia.org/wiki/C\%2B\%2B}{C\plus\plus}%
 	}
 
 \vspace{-6pt}
@@ -412,12 +413,12 @@ UNIXish tools (%
 \item{March 2012 -- June 2012}
      {}
      {Visual WebPage Segmentation {\large (VPS)}}
-	 {Detecting Web page structure with statistical \mbox{analysis} of the visual representation of the rendered page content, and using that structure for improving ranking algorithms in a search engine.\\[1.5pt]%
+	 {Detecting Web page structure with statistical \mbox{analysis} of the visual representation of the rendered page \mbox{content}, and using that structure for improving ranking algorithms in a search engine.\\[1.5pt]%
 \mbox{\small\it(development halted after 4 months due to time constraints)}%
 }
 	 {%
-	 	\href{http://nodejs.org}{Node.js} -- 
-		\href{http://phantomjs.org}{PhantomJS} -- 
+	 	\href{http://nodejs.org}{Node.js} -- %
+		\href{http://phantomjs.org}{PhantomJS} -- %
 		\href{http://www.mongodb.org}{MongoDB}%
 	 }
 
@@ -426,11 +427,11 @@ UNIXish tools (%
 \item{January 2011 -- June 2011}
 	 {}
 	 {\href{https://github.com/baygan/Baygan}{Baygan Database}}
-	 {An extendable and clearly-modulated framework for introducing students to the intricacies of \\relational database design. Inspired by \href{http://www.stanford.edu/class/cs140/projects/pintos/pintos.html}{pintos}.\\[1.5pt]%
+	 {An extendable and clearly-modulated framework for introducing students to the intricacies of relational database design. Inspired by \href{http://www.stanford.edu/class/cs140/projects/pintos/pintos.html}{pintos}.\\[1.5pt]%
 \mbox{\small\it(development halted after 6 months due to time constraints)}%
 }
 	 {%
-	 	\href{http://www.oracle.com/technetwork/java/}{Java} -- 
+	 	\href{http://www.oracle.com/technetwork/java/}{Java} -- %
 		\href{http://www.antlr.org}{ANTLR}%
 	 }
 
@@ -439,7 +440,7 @@ UNIXish tools (%
 \item{June and July 2010}
 	 {}
 	 {Embedded Search Engine}
-	 {A complete, single-purpose search engine (\mbox{written} from scratch), designed to use minimal RAM (60MB) for indexing and searching the English Wikipedia, as the final project for ``\mbox{Information} Retrieval'' course.}
+	 {A complete, single-purpose search engine (all parts \mbox{written} from scratch), designed to use minimal online memory (60MB), for indexing and searching the contents of the English Wikipedia.}
 	 {%
 		 \href{http://www.oracle.com/technetwork/java/}{Java}%
 	 }
@@ -468,7 +469,7 @@ UNIXish tools (%
 \end{description}
 %
 \vspace{-3pt}
-For much of the past 3 years, and also the coming year, I have been working closely with Dr.\ Khadivi on multiple projects (Kavandeh, VPS, Baygan), Berlin Data \mbox{Mining} Cup, and now my thesis project. I have also been a Teacher Assistant for two of Dr.\ Khadivi's courses (``Database Design'': three years, ``Data Mining'': one semester).
+For much of the past 3 years, and also the coming year, I have been working closely with Dr.\ Khadivi on \mbox{multiple} projects (Kavandeh, VPS, Baygan), Berlin Data \mbox{Mining} Cup, and now my thesis project. I have also been Teacher Assistant to a couple of Dr.\ Khadivi's courses (``Database Design'': three years, ``Data Mining'': one semester).
 \\[6pt]
 \uline{More references are available upon request} -- but I've \mbox{included} only Dr.\ Khadivi's address above because I think he would be in the best position to evaluate my academic and technical expertise.
 
@@ -486,15 +487,21 @@ For much of the past 3 years, and also the coming year, I have been working clos
 \item{2010 -- 2013}
 	 {}
 	 {Open Source Contributions}
-	 {Contributing to multiple Open Source projects (code, documentation, bug report, and IRC support), \mbox{including}
-	 \href{http://phantomjs.org}{PhantomJS}, 
-	 \href{https://github.com/ggreer/the_silver_searcher}{Ag (the silver searcher)},
-	 \href{http://bitbucket.org/sjl/hg-prompt/}{hg-prompt},
-	 \href{https://github.com/allending/Kiwi}{Kiwi},
-	 \href{https://github.com/clowwindy/shadowsocks/}{shadowsocks}, 
-	 \href{http://fishshell.com}{fish shell}, and 
-	 \href{https://github.com/mxcl/homebrew}{Homebrew}.}
-	 {}
+	 {Contributing to multiple Open Source projects (code, documentation, bug report, and IRC support), \mbox{including} %
+	 \href{http://phantomjs.org}{PhantomJS}, %
+	 \href{https://github.com/ggreer/the_silver_searcher}{Ag (the silver searcher)}, %
+	 \href{http://bitbucket.org/sjl/hg-prompt/}{hg-prompt}, %
+	 \href{https://github.com/allending/Kiwi}{Kiwi}, %
+	 \href{https://github.com/clowwindy/shadowsocks/}{shadowsocks}, %
+	 \href{http://fishshell.com}{fish shell}, and %
+	 \href{https://github.com/mxcl/homebrew}{Homebrew}.}%
+	 {%
+	 	\href{https://developer.mozilla.org/en-US/docs/Web/JavaScript}{JavaScript} -- %
+	 	\href{http://awk.info}{awk} -- %
+		\href{http://python.org}{Python} -- %
+		\href{https://en.wikipedia.org/wiki/Objective-C}{Objective-C} -- %
+		\href{https://www.ruby-lang.org/en/}{Ruby}%
+	 }
 	 
 \end{project_list}
 
@@ -502,44 +509,43 @@ For much of the past 3 years, and also the coming year, I have been working clos
 
 \item{\href{http://pooriaazimi.github.io/BetterDictionary/}{BetterDictionary}}
 	 {%
-	 	\href{https://en.wikipedia.org/wiki/Objective-C}{Objective-C} -- 
-		\href{https://en.wikipedia.org/wiki/Cocoa_(API)}{Cocoa} -- 
-		\href{https://en.wikipedia.org/wiki/Core_Data}{Core Data}%
+	 	\href{https://en.wikipedia.org/wiki/Objective-C}{Objective-C} -- %
+		\href{https://en.wikipedia.org/wiki/Cocoa_(API)}{Cocoa}%
 	 }	
 
 \item{\href{https://github.com/pooriaazimi/Mini-Java}{MiniJava Parser}}
 	 {%
-		 \href{http://coffeescript.org}{CoffeeScript} -- 
-		 \href{http://zaach.github.io/jison/}{jison} -- 
+		 \href{http://coffeescript.org}{CoffeeScript} -- %
+		 \href{http://zaach.github.io/jison/}{jison} -- %
 		 \href{http://d3js.org}{d3.js}%
 	 }
 
 \item{\href{https://github.com/pooriaazimi/twitter}{A Twitter Clone!}}
 	 {%
-		 \href{http://rubyonrails.org}{Ruby on Rails} -- 
-		 \href{http://www.postgresql.org}{PostgreSQL} -- 
-		 \href{http://coffeescript.org}{CoffeeScript} -- 
+		 \href{http://rubyonrails.org}{Ruby on Rails} -- %
+		 \href{http://www.postgresql.org}{PostgreSQL} -- %
+		 \href{http://coffeescript.org}{CoffeeScript} -- %
 		 \href{http://sass-lang.com}{Sass}%
 	 }
 
 
 \item{\href{http://www.turnedondigital.com/?portfolio=farhang-iphone-app}{Farhang} \large{\rm(partial contribution)}}
 	 {%
-	 	\href{https://en.wikipedia.org/wiki/Objective-C}{Objective-C} -- 
-		\href{https://en.wikipedia.org/wiki/Cocoa_Touch}{Cocoa Touch} -- 
+	 	\href{https://en.wikipedia.org/wiki/Objective-C}{Objective-C} -- %
+		\href{https://en.wikipedia.org/wiki/Cocoa_Touch}{Cocoa Touch} -- %
 		\href{https://en.wikipedia.org/wiki/Core_Data}{Core Data}%
 	 }
 
 \item{\href{https://github.com/pooriaazimi/secure_file_system}{Secure File System}}
 	 {%
-		 \href{http://php.net}{PHP} -- 
+		 \href{http://php.net}{PHP} -- %
 		 \href{http://www.mongodb.org}{MongoDB}%
 	 }
 
 \item{\href{https://github.com/pooriaazimi/adserver}{Ad Server}}
 	 {%
-	 	\href{https://www.ruby-lang.org/en/}{Ruby} -- 
-		\href{http://www.sinatrarb.com}{Sinatra} -- 
+	 	\href{https://www.ruby-lang.org/en/}{Ruby} -- %
+		\href{http://www.sinatrarb.com}{Sinatra} -- %
 		\href{http://www.sqlite.org}{SQLite}%
 	 }
 
