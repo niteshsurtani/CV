@@ -166,7 +166,7 @@
 \newenvironment{oneline_projects}{%
     \newcommand*\inskip{}
     \renewcommand\item[2]{%
-		{\Large\bf ##1}\\
+		{\Large\bf ##1}\\[2pt]
 		{\color[HTML]{666666}\it (##2)}
 		\medskip\\
 		\renewcommand\inskip{\bigskip}
