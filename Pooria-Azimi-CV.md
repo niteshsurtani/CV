@@ -1,8 +1,4 @@
 # Pooria Azimi
-### Curriculum Vitæ
-### More detailed CV (2013): http://bit.ly/pooria-azimi-cv
-
---------------
 
 ##### +1 (541) 602-7426
 ##### azimip@onid.oregonstate.edu

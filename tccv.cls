@@ -34,7 +34,7 @@
 \LoadClass[10pt]{scrartcl}
 
 \setcounter{secnumdepth}{-1}
-\RequirePackage[hmargin=1.25cm,tmargin=1.2cm,bmargin=1.3cm,twocolumn,columnsep=1.1cm]{geometry}
+\RequirePackage[hmargin=1cm,tmargin=0.9cm,bmargin=1.1cm,twocolumn,columnsep=1cm]{geometry}
 \RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,lipsum,tikz,fourier-orns}
 
 \newcommand{\sectionline}{%
